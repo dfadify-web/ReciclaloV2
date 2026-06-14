@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: 126 40% 97%;
+    --foreground: 204 56% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 204 56% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 204 56% 12%;
+    --primary: 154 53% 44%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 126 80% 90%;
+    --secondary-foreground: 204 40% 25%;
+    --muted: 134 50% 95%;
+    --muted-foreground: 204 25% 42%;
+    --accent: 181 49% 43%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 134 35% 88%;
+    --input: 134 35% 88%;
+    --ring: 154 53% 44%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 204 56% 8%;
+    --foreground: 126 80% 92%;
+    --card: 204 50% 12%;
+    --card-foreground: 126 60% 90%;
+    --popover: 204 50% 12%;
+    --popover-foreground: 126 60% 90%;
+    --primary: 154 53% 55%;
+    --primary-foreground: 204 56% 10%;
+    --secondary: 204 35% 18%;
+    --secondary-foreground: 134 50% 75%;
+    --muted: 204 30% 15%;
+    --muted-foreground: 181 25% 55%;
+    --accent: 181 49% 48%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 204 30% 22%;
+    --input: 204 30% 22%;
+    --ring: 154 53% 55%;
+  }
+
+  * {
+    border-color: hsl(var(--border));
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+  }
+
+  #root {
+    min-height: 100dvh;
+  }
+}
